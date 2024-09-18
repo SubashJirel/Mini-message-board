@@ -5,5 +5,6 @@ const router = express.Router();
 
 const messageController = require('../controllers/messageController');
 router.get('/', messageController.getMessages);
-
+router.get('/new', messageController.messageForm);
+router.post('/new', messageController.setMessages);
 module.exports = router;
