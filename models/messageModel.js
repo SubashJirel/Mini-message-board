@@ -1,6 +1,6 @@
 const messages = [
   {
-    text: 'Hello There',
+    text: 'Hello There.....',
     user: 'Jojo',
     added: new Date(),
   },

@@ -4,8 +4,8 @@ const PORT = 3000;
 
 app.set('view engine', 'ejs');
 
-const messageController = require('./controllers/messageController');
-app.get('/', messageController.getMessages);
+const indexRouter = require('./routes/indexRouter');
+app.use('/', indexRouter);
 
 app.listen(PORT, () => {
   console.log(`App listening at port ${PORT}`);
